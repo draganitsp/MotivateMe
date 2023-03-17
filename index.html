@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Sen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>motivateMe</title>
+  </head>
+  <body>
+    <button class="btn btn-index">MOTIVATE ME</button>
+
+    <div class="modalAge modalCss hidden">
+      <h1>Aight, but first...</h1>
+      <p>Please tell me your birth date.</p>
+      <form>
+        <div class="inputField">
+          <input
+            class="inputYear insertAge"
+            type="text"
+            placeholder="Year"
+            maxlength="4"
+          />
+          <input
+            class="inputMonth insertAge"
+            type="text"
+            placeholder="Month"
+            maxlength="2"
+          />
+          <input
+            class="inputDay insertAge"
+            type="text"
+            placeholder="Day"
+            maxlength="2"
+          />
+        </div>
+        <button type="button" class="btn btn-app">NEXT</button>
+      </form>
+    </div>
+
+    <div class="modalPlans modalCss hidden">
+      <h1>Before the motivation begins..</h1>
+      <p>
+        Tell me some of your goals. How do you imagine your life at it's best?
+        Continue the sentence.
+      </p>
+      <p>(60 chars only)</p>
+      <form>
+        <p>In the future, I'd like to..:</p>
+        <input class="insertAge inputPlans" type="text" maxlength="60" />
+        <button type="button" class="btn btn-result">WHAT'S GOING ON</button>
+      </form>
+    </div>
+    <div class="modalResult modalCss hidden">
+      <h2 class="planText">BIG PLANS..</h2>
+      <p id="yearText">#</p>
+      <p id="questionText" class="hidden">
+        WELL, I'M GONNA SHOW YOU SOMETHING.
+      </p>
+      <button type="button" class="btn btn-show hidden">SHOW ME</button>
+    </div>
+
+    <span id="remaining" class="hidden"
+      >THESE ARE THE REMAINING WEEKS OF YOUR LIFE</span
+    >
+    <span id="remaining2" class="hidden">weeks spent</span>
+    <div id="month-container" class="month-container hidden"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

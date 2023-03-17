@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btn {
+  border-style: dotted;
+  border: 5px solid rgb(73, 73, 73);
+  border-radius: 50px;
+  width: 200px;
+  height: 90px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  animation: shadow 4.8s infinite ease-in;
+  transition: 2s;
+  margin-top: 20px;
+}
+.btn-index:hover {
+  transform: scale(140%);
+  transition: 3s;
+}
+
+.frame {
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid white;
+  width: 410px;
+  height: 610px;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  line-height: 1.8;
+  transition: 2s;
+  animation: shadow 2.8s infinite ease-in;
+}
+.modalCss {
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid white;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  line-height: 1.8;
+  transition: 2s;
+}
+.month-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: 900px;
+  min-width: 700px;
+  padding: 20px;
+  border: 4px solid rgb(151, 151, 151);
+  border-radius: 4px;
+  animation: fadeIn 2s linear;
+}
+.monthCubes {
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(28, 180, 41);
+  background-color: rgb(21, 182, 0);
+  border-radius: 2px;
+  animation: fadeIn 3s linear;
+}
+.monthCubesAcitve {
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(28, 180, 41);
+  background-color: rgb(21, 182, 0);
+  border-radius: 2px;
+  animation: fadeIn 3s infinite;
+}
+.monthCubesSpent {
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(10, 90, 16);
+  background-color: rgb(14, 66, 22);
+  border-radius: 2px;
+  animation: fadeIn 3s linear;
+}
+.monthCubesRemain {
+  margin: 1px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(184, 184, 184);
+  background-color: rgb(185, 185, 185);
+  border-radius: 3px;
+  animation: fadeIn 7s linear;
+}
+
+#remaining {
+  max-width: 40%;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  z-index: 5;
+  font-weight: 700;
+  position: relative;
+  top: -140px;
+}
+#remaining2 {
+  max-width: 40%;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  z-index: 5;
+  font-weight: 700;
+  position: relative;
+  top: 50px;
+}
+.shadow {
+  animation: shadow 2.8s infinite ease-in;
+}
+
+h1,
+p,
+button,
+input {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.insertAge {
+  height: 20px;
+  width: 90%;
+  border-radius: 40px;
+  font-size: 25px;
+  padding: 45px;
+}
+
+.hidden {
+  display: none;
+  transition: 10s;
+}
+.yearText {
+  animation: fadeIn 1s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0px 0px 30px 0px white;
+  }
+  20% {
+    box-shadow: 0px 2px 33px 2px white;
+  }
+  40% {
+    box-shadow: 5px 3px 37px 3px white;
+  }
+  60% {
+    box-shadow: 2px -3px 34px 2px white;
+  }
+  80% {
+    box-shadow: -2px -1px 32px 1px white;
+  }
+  100% {
+    box-shadow: 0px 0px 30px 0px white;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(100%);
+  }
+
+  25% {
+    transform: scale(120%);
+  }
+
+  50% {
+    transform: scale(160%);
+  }
+
+  75% {
+    transform: scale(130%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 1.8s linear;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 1.8s linear;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+.fadeInSlow {
+  animation: fadeInSlow 5.8s linear;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
+.fadeInText {
+  animation: fadeIn 1.8s linear;
+  animation-fill-mode: forwards;
+}
