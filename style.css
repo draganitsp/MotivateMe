@@ -15,11 +15,6 @@ body {
   align-items: center;
 }
 
-.inputfield {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 .btn {
   border-style: dotted;
   border: 5px solid rgb(73, 73, 73);
@@ -55,7 +50,7 @@ body {
   transition: 2s;
   animation: shadow 2.8s infinite ease-in;
 }
-.modalCss {
+.modal-css {
   color: white;
   padding: 10px;
   border-radius: 15px;
@@ -83,7 +78,7 @@ body {
   border-radius: 4px;
   animation: fadeIn 2s linear;
 }
-.monthCubes {
+.month-cubes {
   margin: 1px;
   width: 10px;
   height: 10px;
@@ -92,7 +87,7 @@ body {
   border-radius: 2px;
   animation: fadeIn 3s linear;
 }
-.monthCubesAcitve {
+.month-cubes-acitve {
   margin: 1px;
   width: 10px;
   height: 10px;
@@ -101,7 +96,7 @@ body {
   border-radius: 2px;
   animation: fadeIn 3s infinite;
 }
-.monthCubesSpent {
+.month-cubes-spent {
   margin: 1px;
   width: 10px;
   height: 10px;
@@ -110,7 +105,7 @@ body {
   border-radius: 2px;
   animation: fadeIn 3s linear;
 }
-.monthCubesRemain {
+.month-cubes-remain {
   margin: 1px;
   width: 10px;
   height: 10px;
@@ -152,7 +147,7 @@ input {
   text-transform: uppercase;
 }
 
-.insertAge {
+.insert-age {
   height: 20px;
   width: 90%;
   border-radius: 40px;
@@ -164,7 +159,7 @@ input {
   display: none;
   transition: 10s;
 }
-.yearText {
+.year-text {
   animation: fadeIn 1s linear;
   animation-fill-mode: forwards;
 }
@@ -240,24 +235,24 @@ input {
   }
 }
 
-.fadeOut {
+.fade-out {
   animation: fadeOut 1.8s linear;
   position: absolute;
   animation-fill-mode: forwards;
 }
 
-.fadeIn {
+.fade-in {
   animation: fadeIn 1.8s linear;
   position: absolute;
   animation-fill-mode: forwards;
 }
-.fadeInSlow {
-  animation: fadeInSlow 5.8s linear;
+.fade-in-slow {
+  animation: fadeInSlow 7.8s linear;
   position: absolute;
   animation-fill-mode: forwards;
 }
 
-.fadeInText {
-  animation: fadeIn 1.8s linear;
+.fade-in-text {
+  animation: fadeInSlow 4.2s linear;
   animation-fill-mode: forwards;
 }
